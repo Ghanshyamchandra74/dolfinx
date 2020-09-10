@@ -67,6 +67,10 @@ add_feature_info(DOLFINX_SKIP_BUILD_TESTS DOLFINX_SKIP_BUILD_TESTS "Skip build t
 option(CMAKE_INSTALL_RPATH_USE_LINK_PATH "Add paths to linker search and installed rpath." ON)
 add_feature_info(CMAKE_INSTALL_RPATH_USE_LINK_PATH CMAKE_INSTALL_RPATH_USE_LINK_PATH "Add paths to linker search and installed rpath.")
 
+# Add shared library paths so shared libs in non-system paths are found
+option(CMAKE_INSTALL_RPATH_USE_LINK_PATH "Add paths to linker search and installed rpath." ON)
+add_feature_info(CMAKE_INSTALL_RPATH_USE_LINK_PATH CMAKE_INSTALL_RPATH_USE_LINK_PATH "Add paths to linker search and installed rpath.")
+
 #------------------------------------------------------------------------------
 # Enable or disable optional packages
 
